@@ -29,13 +29,13 @@ class YemekTarifiUygulamasi(QWidget):
         layout = QVBoxLayout()
         layout.setSpacing(10)
 
-        # Görseli ekle
+       
         self.label_resim = QLabel()
-        pixmap = QPixmap('C:\\Users\\pc\\Downloads\\preview-xl.jpg')  # Resmin dosya yolunu verin
+        pixmap = QPixmap('C:\\Users\\pc\\Downloads\\preview-xl.jpg')  
         self.label_resim.setPixmap(pixmap)
         layout.addWidget(self.label_resim)
 
-        # Tarif seçimi için yatay düzen
+        
         tarif_layout = QHBoxLayout()
         self.label_tarif = QLabel('Tarif Seçin:')
         self.label_tarif.setStyleSheet("color: #e76900")  # Yazı rengi turuncu
@@ -48,14 +48,14 @@ class YemekTarifiUygulamasi(QWidget):
         layout.addLayout(tarif_layout)
 
         self.label_malzemeler = QLabel('Malzemeler:')
-        self.label_malzemeler.setStyleSheet("color: #fb0308")  # Yazı rengi açık yeşil
+        self.label_malzemeler.setStyleSheet("color: #fb0308")  
         layout.addWidget(self.label_malzemeler)
 
         self.input_malzemeler = QTextEdit()
         layout.addWidget(self.input_malzemeler)
 
         self.label_icerik = QLabel('Tarif İçeriği:')
-        self.label_icerik.setStyleSheet("color: #fe0601")  # Yazı rengi mavi
+        self.label_icerik.setStyleSheet("color: #fe0601")  
         layout.addWidget(self.label_icerik)
 
         self.input_icerik = QTextEdit()
