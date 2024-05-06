@@ -58,7 +58,7 @@ class StokTakipArayuzu(QMainWindow):
         self.central_widget.setLayout(self.layout)
 
         self.gorsel_label = QLabel()
-        self.gorsel_label.setPixmap(QPixmap("C:\\Users\\pc\\Downloads\\6964210_stock-vector-ddelivery-equipment-warehouse.jpg"))  # Burada resmin dosya yolu verilmelidir.
+        self.gorsel_label.setPixmap(QPixmap("C:\\Users\\pc\\Downloads\\6964210_stock-vector-ddelivery-equipment-warehouse.jpg")) 
 
         self.urun_adi_label = QLabel("Ürün Adı:")
         self.urun_adi_input = QLineEdit()
@@ -90,7 +90,6 @@ class StokTakipArayuzu(QMainWindow):
         self.layout.addWidget(self.stok_durumu_button)
         self.layout.addWidget(self.siparis_ver_button)
 
-        # Stok ve ürünlerin oluşturulması
         self.stok = Stok()
         self.stok.urun_ekle(Urun("Bilgisayar", 150))
         self.stok.urun_ekle(Urun("Telefon", 75))
